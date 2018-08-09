@@ -1,0 +1,153 @@
+/*画廊*/
+.gallery {    
+  width:100%;
+  margin: 0 auto;
+  display: flex;    
+  justify-content: flex-start;    
+  flex-wrap: wrap;
+  background: #fffaf0;
+}
+/*每张图片所占容器*/
+.item-ot{
+  margin:0 auto;
+  width: 100%;
+  height: 100%;
+}
+.item {    
+  position:relative;
+  margin:0 auto;
+  width:370rpx;
+  height:490rpx;
+  background:#eee;
+  border:2rpx solid #f9c4c2;
+  /* overflow:hidden; */
+}
+.itemImg{
+  position: absolute;
+  left: 0;
+  top:0; 
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index:1;
+}
+.itemImg image{
+  width: 100%;
+  height: 100%;
+}
+/*add按钮*/
+ .addIcon{
+   position:absolute;
+  left: 0;
+  top: 0; 
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  line-height:490rpx;
+  font-size:80rpx;
+  background: #fff;
+  color: #999;
+  z-index:2;
+}
+/*删除按钮*/
+.delete {    
+  position:absolute;
+  right:0;
+  top:0;
+  /* background:#ccc; */
+  opacity:1;
+  height: 36rpx;
+  font-size:22rpx;
+  font-weight:700;
+  padding:0 8rpx 0 10rpx;
+  color: #999;
+}
+.itemTxt{
+  text-align: center;
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 50rpx;
+  margin-bottom:  70rpx;
+  font-weight: 700;
+}
+.uploadFinish{
+  width: 100%;
+  height: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.uploadFinishBtn{
+  background: #ff6666;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 26rpx 0;
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 10rpx;
+  margin-bottom: 40rpx;
+}
+.tipTitle{
+  text-align: center;
+  font-size: 30rpx;
+  color: #f6a29d;
+  font-weight: 700;
+  width: 100%;
+  margin: 50rpx 0;
+}
+.boxStyle{
+  width:300rpx;
+  height:100rpx;
+  position:absolute;
+  bottom:-1rpx;
+  border-radius:50%;
+  box-shadow:0rpx 10rpx 100rpx #fddbd9;
+  margin-left:35rpx;
+}
+/*声明文字*/
+.statementTxt{
+  width: 100%;
+  color: #bbb;
+  font-size: 26rpx;
+  text-align: center;
+  margin-bottom: 60rpx;
+  font-weight: 100;
+}
+/*顶部文字*/
+.ry-top{
+  width: 100%;
+  height: 300rpx;
+  background: linear-gradient(to bottom right, #faccc8 , #fffbf0);
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 50rpx;
+}
+.ry-top-tip{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.top-bg{
+  width: 100%;
+  height: 270rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.top-bg image{
+  width: 100%;
+  height: 100%;
+}
+.top-txt{
+  width: 525rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 65rpx;
+  left: 50%;
+  margin-left: -262.5rpx;
+}
+.top-txt image{
+  width: 100%;
+  height: 100%;
+}

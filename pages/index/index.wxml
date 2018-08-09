@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<navigator  url="/pages/upOK/upOK">单次单张上传</navigator>
+<navigator  url="/pages/uploadPhoto/uploadPhoto">多次单张上传</navigator>
+<navigator  url="/pages/uploadPhotoMore/uploadPhotoMore">单次多张上传（九宫格）</navigator>

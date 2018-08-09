@@ -1,0 +1,12 @@
+<view class="gallery">
+    <view class="item" wx:for="{{images}}" wx:key="">
+        <image src="{{item}}" data-src="{{item}}" bindtap="previewImage" mode="aspectFill" />
+
+        <!-- 删除按钮 -->
+        <view class="delete" bindtap="delete" data-index="{{index}}">X</view>
+    </view>
+    <view class="item" bindtap="chooseImage">
+        <view class='addIcon'>+</view>
+    </view>
+</view>
+<button type="primary" bindtap="submit">提交</button>

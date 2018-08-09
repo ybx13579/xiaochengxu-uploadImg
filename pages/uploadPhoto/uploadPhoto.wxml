@@ -1,0 +1,66 @@
+<view class='ry-top'>
+  <view class='ry-top-tip'>
+    <view class='top-bg'><image src='../../../img/top-bg.png'></image></view>
+  </view>
+</view>
+<view class="gallery">
+  <view class='tipTitle'>
+    快去上传自己的照片吧
+  </view>
+  <view class='item-ot'>
+    <view class="item">
+      <!-- 添加按钮 -->
+      <view class="addIcon" bindtap="chooseImage" wx:if="{{imgBoolean}}">
+          <view class=''>+</view>
+      </view>
+      <!-- 上传的图 -->
+      <view class='itemImg' >
+        <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"  mode="aspectFill" />
+        <!-- 删除按钮 -->
+        <view class="delete" bindtap="deleteImg" data-index="{{index}}">X</view>
+      </view>
+      <view class='boxStyle'></view>
+    </view>
+    <view class='itemTxt'>正面照</view>
+  </view>
+    
+  <view class='item-ot'>
+   <view class="item">
+      <!-- 添加按钮 -->
+      <view class="addIcon" bindtap="chooseImage2" wx:if="{{imgBoolean2}}">
+          <view class=''>+</view>
+      </view>
+      <!-- 上传的图 -->
+      <view class='itemImg' >
+        <image src="{{item2}}" data-src="{{item2}}" bindtap="previewImage2"  mode="aspectFill" />
+        <!-- 删除按钮 -->
+        <view class="delete" bindtap="deleteImg2" data-index="{{index2}}">X</view>
+      </view>
+      <view class='boxStyle'></view>
+    </view>
+    <view class='itemTxt'>45度侧脸</view>
+  </view>
+   
+  <view class='item-ot'>
+    <view class="item">
+      <!-- 添加按钮 -->
+      <view class="addIcon" bindtap="chooseImage3" wx:if="{{imgBoolean3}}">
+          <view class=''>+</view>
+      </view>
+      <!-- 上传的图 -->
+      <view class='itemImg' >
+        <image src="{{item3}}" data-src="{{item3}}" bindtap="previewImage3"  mode="aspectFill" />
+        <!-- 删除按钮 -->
+        <view class="delete" bindtap="deleteImg3" data-index="{{index3}}">X</view>
+      </view>
+      <view class='boxStyle'></view>
+    </view>
+    <view class='itemTxt'>侧面照</view>
+  </view>
+  <view class='uploadFinish'>
+    <a class="uploadFinishBtn" href="javasctipt:;"  bindtap="submit">提  交</a>
+  </view> 
+  <view class='statementTxt'>
+      <view>我们会尊重并严格保护您的隐私</view>  
+  </view>
+</view>
